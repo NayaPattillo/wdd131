@@ -12,7 +12,7 @@ body {
 
 /* mobile **************************/
 header {
-    background-color: #97e3b2;
+    background-color: lightgreen;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +107,7 @@ p {
 }
 
 footer {
-    background-color: #97e3b2;
+    background-color: lightgreen;
     display: flex;
     align-items: center;
     justify-content: center;
