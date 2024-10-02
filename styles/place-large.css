@@ -1,0 +1,41 @@
+@media (min-width: 640px) {
+    .weather h2::after {
+        content: "⛅";
+        margin-left: 1rem;
+        font-size: 20px;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    h2 {
+        background-color: lightgreen;
+        text-align: left;
+        padding: 3% 5%;
+        position: relative;
+        right: 3%;
+    }
+
+    table {
+        padding: 2rem;
+    }
+
+    .data {
+        background-color: #ffffffbd;
+        border: none;
+        width: 250px;
+        top: 30%;
+        left: 2%;
+        position: absolute;
+    }
+
+    .weather {
+        background-color: #ffffffbd;
+        width: 300px;
+        justify-self: end;
+        bottom: 10%;
+        right: 1%;
+        position: absolute;
+    }
+}

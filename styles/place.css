@@ -1,0 +1,36 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+    background-color: lightgreen;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.weather-icon {
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+}
+
+section {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin: 0;
+    background-color: lightgreen;
+}
