@@ -1,0 +1,48 @@
+header {
+    text-align: center;
+}
+
+section {
+    margin-right: 30rem;
+    margin-left: 30rem;
+    margin-top: 5rem;
+}
+
+.color-scheme-header {
+    background-color: #A10702;
+    color: #F1BB87;
+}
+
+.color-scheme-h2 {
+    color: #a10702;
+}
+
+.color-scheme-text {
+    color: #1b2021;
+}
+
+.color-scheme-accents {
+    color: #77ba99;
+}
+
+.font-header {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-style: bold;
+}
+
+.font-header2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+}
+
+.font-paragraph {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+}
+
+.font-italic {
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
+}
