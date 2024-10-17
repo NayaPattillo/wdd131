@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+main {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #b8c4d7;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+    margin: 2rem 0;
+}
+
+.prodForm label,
+div {
+    display: block;
+    padding-top: .5rem;
+    font-size: .9rem;
+}
+
+.prodForm input[type="text"],
+.prodForm input[type="date"],
+.prodForm select {
+    display: block;
+    border: .1rem solid #ddd;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.prodForm input[type="radio"],
+.prodForm input[type="checkbox"] {
+    margin: 6px;
+}
+
+.prodForm input[type="submit"] {
+    border: none;
+    padding: .8rem;
+    border-radius: 6px;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+    background-color: #5e6b81;
+    color: #fff;
+}
+
+.prodForm input:required,
+.prodForm select:required {
+    border-right: solid 8px red;
+}
+
+.prodForm input:required:valid,
+.prodForm select:required:valid {
+    border-right: solid 8px green;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #b8c4d7;
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 32.5em) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        width: 70%;
+    }
+}

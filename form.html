@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Naya Pattillo">
+    <meta name="Description" content="W05 Forum">
+    <title>W05 Form Assignment</title>
+    <link href="styles/form.css" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <head>
+
+    </head>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html" class="prodForm">
+            <fieldset>
+                <label>
+                    *Product Name
+                    <select name="product" id="prodSelect" required>
+                        <option value="">Select a Product... &#9662;</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <div>Overall Rating</div>
+                <label><input type="radio" name="rating" value="1star">&#9734;</label>
+                <label><input type="radio" name="rating" value="2star">&#9734; &#9734;</label>
+                <label><input type="radio" name="rating" value="3star">&#9734; &#9734; &#9734;</label>
+                <label><input type="radio" name="rating" value="4star">&#9734; &#9734; &#9734; &#9734;</label>
+                <label><input type="radio" name="rating" value="5star">&#9734; &#9734; &#9734; &#9734; &#9734;</label>
+            </fieldset>
+            <fieldset>
+                <label>*Date of Installation <input type="date" name="installDate" id="date" required></label>
+            </fieldset>
+            <fieldset>
+                <div>Which features did you find most useful in the product? (Check all that apply)</div>
+                <label><input type="checkbox" name="durability" value="yes"> Durability</label>
+                <label><input type="checkbox" name="ease" value="yes"> Ease of Use</label>
+                <label><input type="checkbox" name="perform" value="yes"> Performance</label>
+                <label><input type="checkbox" name="design" value="yes"> Design</label>
+            </fieldset>
+            <fieldset>
+                <label>Written Review (optional)</label>
+                <textarea id="review" name="review" rows="4" cols="40"></textarea>
+                <label>Your Name (optional)<input type="text" name="userName"></label>
+            </fieldset>
+            <input type="submit" value="Post Review" id="submit">
+        </form>
+    </main>
+    <footer>
+        <p>&#169; <span id="currentyear"></span> Naya Pattillo Utah USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
