@@ -1,0 +1,181 @@
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0 auto;
+}
+
+/* header/navigation */
+
+header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #A10702;
+    color: #F1BB87;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+nav {
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+    color: #F1BB87;
+}
+
+#menu.open::before {
+    content: "X";
+    color: #F1BB87;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: #1b2021;
+    color: #77ba99;
+}
+
+.open a {
+    display: block;
+    background-color: #F1BB87;
+    color: #A10702;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 2px;
+    margin: 3px;
+}
+
+.contactUs {
+    margin: 1rem;
+    text-align: right;
+}
+
+.contactUs p {
+    padding: 0;
+    margin: 0;
+    font-size: small;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #A10702;
+    color: #F1BB87;
+    width: 100%;
+}
+
+.yearMod {
+    text-align: center;
+}
+
+/*picture cards small*/
+section {
+    margin: 2rem 1rem;
+}
+
+section h2 {
+    margin-bottom: 0;
+    text-align: center;
+    color: #A10702;
+}
+
+section p {
+    margin-top: 0;
+    color: #1b2021;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: solid 5px #77ba99;
+    border-radius: 5px;
+}
+
+@media (min-width: 640px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation a {
+        display: inline;
+        padding: 1rem 2rem 1rem 2rem;
+        background-color: #F1BB87;
+        color: #A10702;
+        text-decoration: none;
+        padding: .5rem;
+        border-radius: 2px;
+        margin: 3px;
+    }
+
+    /*picture cards large*/
+    section {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #mainCard p,
+    #mainCard h2,
+    #breadCard p,
+    #breadCard h2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding-left: .5rem;
+        text-align: left;
+    }
+
+    #dessertCard {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #dessertCard p,
+    #dessertCard h2 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: right;
+        padding-right: .5rem;
+    }
+
+    img {
+        width: 250px;
+    }
+
+    section p {
+        margin-top: 2rem;
+    }
+
+    section h2 {
+        margin-top: 0;
+    }
+}
