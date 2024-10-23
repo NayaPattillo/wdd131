@@ -85,6 +85,7 @@ nav {
 footer {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     background-color: #A10702;
     color: #F1BB87;
     width: 100%;
@@ -178,4 +179,40 @@ img {
     section h2 {
         margin-top: 0;
     }
+}
+
+/* recipie cards */
+.mainDishes img,
+.dessertCards img {
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+.label {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.ingredients {
+    padding-top: 1rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.instructions {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.servings {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.mainDishes h3,
+.dessertCards h3 {
+    padding: 0;
+    margin: 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
