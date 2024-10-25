@@ -52,6 +52,23 @@
             <p>From savory to sweet, experience the comforting aroma and warm, inviting texture of freshly baked bread.
                 Perfect for pairing with soups, salads, or cheeses, or simply enjoyed warm with a pat of butter.</p>
         </section>
+        <form method="get" action="thanks.html" class="recipieForm">
+            <h2>Share with us your recipies!</h2>
+            <fieldset>
+                <div>Recipie Type</div>
+                <label><input type="radio" name="type" value="mainDish">Main Dish</label>
+                <label><input type="radio" name="type" value="dessert">Dessert</label>
+                <label><input type="radio" name="type" value="bread">Bread</label>
+            </fieldset>
+            <fieldset class="recipieinput">
+                <label>Recipie Name<input type="text" name="recipieName"></label>
+                <label>Your Recipie</label>
+                <textarea id="review" name="review" rows="4" cols="40"></textarea>
+                <label>Your Name (optional)<input type="text" name="userName"></label>
+                <label>Your Email (optional)<input type="email" name="userEmail"></label>
+            </fieldset>
+            <input type="submit" value="Share Your Recipie" id="submit">
+        </form>
     </main>
     <footer>
         <h1>Food Filter</h1>

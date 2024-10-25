@@ -14,7 +14,8 @@ header {
     color: #fceca6;
 }
 
-h1 {
+h1,
+h2 {
     text-align: left;
     margin-left: 1rem;
 }
@@ -78,6 +79,63 @@ nav {
     padding: 0;
     margin: 0;
     font-size: small;
+}
+
+/* Forum */
+form h2 {
+    margin-left: 1rem;
+    margin-top: 5rem;
+}
+
+fieldset {
+    margin: 0 10rem 0 1rem;
+    border-color: #1b2021;
+}
+
+.recipieinput label,
+div {
+    font-size: medium;
+    color: #A10702;
+    font-weight: 600;
+}
+
+.recipieForm label,
+div {
+    display: block;
+    padding-top: .5rem;
+}
+
+.recipieForm input[type="text"],
+.recipieForm input[type="email"] {
+    display: block;
+    border: 1px solid #1b2021;
+    border-radius: 6px;
+    padding: .75rem;
+    color: black;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.recipieForm input[type="radio"] {
+    margin: 6px;
+}
+
+.recipieForm input[type="submit"] {
+    margin: .5rem 1rem 2rem;
+    border: none;
+    padding: .8rem;
+    border-radius: 6px;
+    width: 96%;
+    max-width: 400px;
+    box-shadow: 1px 1px 4px #999;
+    background-color: #A10702;
+    color: #fceca6;
+}
+
+.recipieForm input[type="submit"]:hover {
+    background-color: #1b2021;
+    color: #77ba99;
 }
 
 /* footer */

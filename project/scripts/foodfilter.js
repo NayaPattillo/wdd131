@@ -71,3 +71,22 @@ function createMainDishCard(mainFilteredRecipe) {
         document.querySelector(".mainDishes").appendChild(card);
     });
 }
+
+// form submit count
+
+function getCount() {
+    const count = document.getElementById('submitTotal');
+    return count ? parseInt(count) : 0;
+}
+function updateCount() {
+    let count = getCount();
+    count += 1;
+    localStorage.setItem('submitTotal', count);
+    document.getElementById('submitTotal').textContent = count;
+}
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('submitTotal').textContent = getCount();
+});
+document.getElementById('submit').addEventListener('click', () => {
+    updateCount();
+});
