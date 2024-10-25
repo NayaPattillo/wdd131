@@ -38,56 +38,7 @@ const mainDishes = [
     }
 ];
 
-const desserts = [
-    {
-        dishName: "",
-        ingredients: "",
-        instructions: "",
-        servings: 2,
-        imageUrl: ""
-    },
-    {
-        dishName: "",
-        ingredients: "",
-        instructions: "",
-        servings: 2,
-        imageUrl: ""
-    },
-    {
-        dishName: "",
-        ingredients: "",
-        instructions: "",
-        servings: 2,
-        imageUrl: ""
-    }
-];
-
-const breads = [
-    {
-        dishName: "",
-        ingredients: "",
-        instructions: "",
-        servings: 2,
-        imageUrl: ""
-    },
-    {
-        dishName: "",
-        ingredients: "",
-        instructions: "",
-        servings: 2,
-        imageUrl: ""
-    },
-    {
-        dishName: "",
-        ingredients: "",
-        instructions: "",
-        servings: 2,
-        imageUrl: ""
-    }
-];
-
 createMainDishCard(mainDishes);
-createDessertCard(desserts);
 
 function createMainDishCard(mainFilteredRecipe) {
     document.querySelector(".mainDishes").innerHTML = "";
@@ -118,37 +69,5 @@ function createMainDishCard(mainFilteredRecipe) {
         card.appendChild(img);
 
         document.querySelector(".mainDishes").appendChild(card);
-    });
-}
-
-function createDessertCard(dessertFilteredRecipe) {
-    document.querySelector(".dessertCards").innerHTML = "";
-    dessertFilteredRecipe.forEach(dessert => {
-        let card = document.createElement("section");
-        let name = document.createElement("h3");
-        let ingredients = document.createElement("p");
-        ingredients.className = 'ingredients';
-        let instructions = document.createElement("p");
-        instructions.className = 'instructions';
-        let servings = document.createElement("p");
-        servings.className = 'servings';
-        let img = document.createElement("img");
-
-        name.textContent = dessert.dishName;
-        ingredients.innerHTML = `<span class="label">Ingredients:</span> ${dessert.ingredients}`;
-        instructions.innerHTML = `<span class="label">Instructions:</span> ${dessert.instructions}`;
-        servings.innerHTML = `<span class="label">Serving Size:</span> ${dessert.servings}`;
-
-        img.setAttribute("src", dessert.imageUrl);
-        img.setAttribute('alt', `${dessert.dishName}`);
-        img.setAttribute("loading", "lazy");
-
-        card.appendChild(name);
-        card.appendChild(ingredients);
-        card.appendChild(instructions);
-        card.appendChild(servings);
-        card.appendChild(img);
-
-        document.querySelector(".dessertCards").appendChild(card);
     });
 }
