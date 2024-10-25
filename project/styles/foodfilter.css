@@ -11,7 +11,7 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #A10702;
-    color: #F1BB87;
+    color: #fceca6;
 }
 
 h1 {
@@ -35,12 +35,12 @@ nav {
 
 #menu::before {
     content: "☰";
-    color: #F1BB87;
+    color: #fceca6;
 }
 
 #menu.open::before {
     content: "X";
-    color: #F1BB87;
+    color: #fceca6;
 }
 
 .navigation {
@@ -61,7 +61,7 @@ nav {
 
 .open a {
     display: block;
-    background-color: #F1BB87;
+    background-color: #fceca6;
     color: #A10702;
     text-decoration: none;
     padding: .5rem;
@@ -87,7 +87,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     background-color: #A10702;
-    color: #F1BB87;
+    color: #fceca6;
     width: 100%;
 }
 
@@ -140,7 +140,7 @@ img {
     .navigation a {
         display: inline;
         padding: 1rem 2rem 1rem 2rem;
-        background-color: #F1BB87;
+        background-color: #fceca6;
         color: #A10702;
         text-decoration: none;
         padding: .5rem;
