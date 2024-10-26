@@ -74,19 +74,56 @@ function createMainDishCard(mainFilteredRecipe) {
 
 // form submit count
 
-function getCount() {
-    const count = document.getElementById('submitTotal');
-    return count ? parseInt(count) : 0;
+// function getCount() {
+//     const count = document.getElementById('submitTotal');
+//     return count ? parseInt(count) : 0;
+// }
+// function updateCount() {
+//     let count = getCount();
+//     count += 1;
+//     localStorage.setItem('submitTotal', count);
+//     document.getElementById('submitTotal').textContent = count;
+// }
+// document.addEventListener('DOMContentLoaded', () => {
+//     document.getElementById('submitTotal').textContent = getCount();
+// });
+// document.getElementById('submit').addEventListener('click', () => {
+//     updateCount();
+// });
+
+// Function to count submissions
+function countSubmissions() {
+    // Get the current count of submissions from localStorage
+    let submissionCount = localStorage.getItem('submitCount');
+
+    // If it doesn't exist, initialize it to 0
+    if (submitCount === null) {
+        submitCount = 0;
+    } else {
+        // If it exists, convert it to a number and increment it
+        submit = parseInt(submit, 10) + 1;
+    }
+
+    // Store the updated count back in localStorage
+    localStorage.setItem('submitCount', submitCount);
+
+    // Display the submission count
+    document.getElementById('submitTotal').innerText = `Number of submissions: ${submitCount}`;
 }
-function updateCount() {
-    let count = getCount();
-    count += 1;
-    localStorage.setItem('submitTotal', count);
-    document.getElementById('submitTotal').textContent = count;
-}
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('submitTotal').textContent = getCount();
+
+// Add event listener to the form
+document.getElementById('recipieForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the default form submission
+    countSubmissions(); // Count the submission
+    // Here you can also add code to handle the actual submission, e.g., sending data to a server
 });
-document.getElementById('submit').addEventListener('click', () => {
-    updateCount();
-});
+
+// Initialize the display on page load
+window.onload = function () {
+    // Retrieve and display the current count when the page loads
+    const submitCount = localStorage.getItem('submitCount') || 0;
+    document.getElementById('submitTotal').innerText = `Number of submissions: ${submitCount}`;
+};
+
+
+

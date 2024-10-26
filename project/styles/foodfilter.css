@@ -73,6 +73,7 @@ nav {
 .contactUs {
     margin: 1rem;
     text-align: right;
+    color: #fceca6;
 }
 
 .contactUs p {
@@ -99,14 +100,14 @@ div {
     font-weight: 600;
 }
 
-.recipieForm label,
+#recipieForm label,
 div {
     display: block;
     padding-top: .5rem;
 }
 
-.recipieForm input[type="text"],
-.recipieForm input[type="email"] {
+#recipieForm input[type="text"],
+#recipieForm input[type="email"] {
     display: block;
     border: 1px solid #1b2021;
     border-radius: 6px;
@@ -117,11 +118,11 @@ div {
     appearance: none;
 }
 
-.recipieForm input[type="radio"] {
+#recipieForm input[type="radio"] {
     margin: 6px;
 }
 
-.recipieForm input[type="submit"] {
+#recipieForm input[type="submit"] {
     margin: .5rem 1rem 2rem;
     border: none;
     padding: .8rem;
@@ -133,7 +134,7 @@ div {
     color: #fceca6;
 }
 
-.recipieForm input[type="submit"]:hover {
+#recipieForm input[type="submit"]:hover {
     background-color: #1b2021;
     color: #77ba99;
 }
@@ -151,6 +152,7 @@ footer {
 
 .yearMod {
     text-align: center;
+    color: #fceca6;
 }
 
 /*picture cards small*/
